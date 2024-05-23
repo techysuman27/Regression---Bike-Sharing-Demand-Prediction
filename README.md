@@ -3,6 +3,8 @@
 <b>Problem Statement</b><br>
 Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes.<hr>
 
+![Seoul_Bike_Sharing](https://github.com/techysuman27/Regression---Bike-Sharing-Demand-Prediction/assets/160243092/d971f80d-5dd7-4ab7-8e53-31f2e7ab5484)
+
 <strong>Describing DataSet</strong><br>
 The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
 
