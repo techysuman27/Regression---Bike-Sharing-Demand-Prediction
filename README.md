@@ -24,7 +24,8 @@ Seasons - Winter, Spring, Summer, Autumn<br>
 Holiday - Holiday/No holiday<br>
 Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)<br>
 <hr>
-<b>Algorithms for Model Training</b>
+
+<b>Algorithms for Model Training</b> ---> 1. Linear Regression, 2. Random Forest, 3. XGBoost
 
 ## Approach
 The following steps were followed in the project:
