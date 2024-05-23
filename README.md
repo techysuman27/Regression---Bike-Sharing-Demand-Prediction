@@ -1,40 +1,40 @@
-# Regression---Bike-Sharing-Demand-Prediction
-Bike-Sharing-Demand-Prediction - 0.90 %
-Problem Statement
-Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes.
+# Bike-Sharing-Demand-Prediction - 0.90 %
 
-![Seoul_Bike_Sharing](https://github.com/techysuman27/Regression---Bike-Sharing-Demand-Prediction/assets/160243092/d971f80d-5dd7-4ab7-8e53-31f2e7ab5484)
+<b>Problem Statement</b><br>
+Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes.<hr>
 
-Describing DataSet
+<strong>Describing DataSet</strong><br>
 The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
 
-Attribute Information:
-Date : year-month-day
-Rented_Bike_Count - Count of bikes rented at each hour
-Hour - Hour of he day
-Temperature-Temperature in Celsius
-Humidity - %
-Windspeed - m/s
-Visibility - 10m
-Dew point temperature - Celsius
-Solar radiation - MJ/m2
-Rainfall - mm
-Snowfall - cm
-Seasons - Winter, Spring, Summer, Autumn
-Holiday - Holiday/No holiday
-Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
+<strong>Attribute Information:</strong><br>
+Date : year-month-day<br>
+Rented_Bike_Count - Count of bikes rented at each hour<br>
+Hour - Hour of he day<br>
+Temperature-Temperature in Celsius<br>
+Humidity - %<br>
+Windspeed - m/s<br>
+Visibility - 10m<br>
+Dew point temperature - Celsius<br>
+Solar radiation - MJ/m2<br>
+Rainfall - mm<br>
+Snowfall - cm<br>
+Seasons - Winter, Spring, Summer, Autumn<br>
+Holiday - Holiday/No holiday<br>
+Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)<br>
+<hr>
+<b>Algorithms for Model Training</b>
 
-Algorithms for Model Training
-A model defines the relationship between features and label.A feature is an input variable—the x variable in simple linear regression.A label is the thing we're predicting—the y variable in simple linear regression.Training means creating or learning the model.In order to build the predictive model, it's time to implement some of the model training on the above selected feature.
-Following algorithms have been used for predictions:-
+## Approach
+The following steps were followed in the project:
+ 
+**Data Preprocessing**: The dataset was preprocessed and cleaned to handle missing values, outliers, and any inconsistencies in the data.
 
-Linear Regression
-Lasso Regression
-Random Forest Regression
+**Data Split**: The preprocessed data was split into training and test sets. The training set was used to train our machine learning model, while the test set was used for evaluation.
 
-Boosting
-Boosting is a method used in machine learning to reduce errors in predictive data analysis.Boosting improves machine models' predictive accuracy and performance by converting multiple weak learners into a single strong learning model. Machine learning models can be weak learners(have low prediction accuracy, similar to random guessing,prone to overfitting) or strong learners(higher prediction accuracy). Boosting converts a system of weak learners into a single strong learning system. There are many boosting algorithms which impart additional boost to model’s accuracy:
+**Model Training**: Several different machine learning model architectures and hyperparameter settings were experimented with. The models were trained using the training data, and their performances were evaluated using various metrics.
 
-GradientBoostingRegressor - aggregates the results of each decision tree along the way to calculate the final result
-XGB Regressor - provides parallel tree boosting,trees grow depth-wise
-Light-BGM - trees grow leaf-wise
+**Model Evaluation**: The performance of the trained models was evaluated using metrics such as mean absolute error, root mean squared error, and R-squared. The model that performed the best on the test data was selected.
+
+**Feature Importance**: Ablation studies were conducted to understand the impact of individual features on the model's performance. The analysis revealed the significance of temperature, weather conditions, and seasonality features in predicting bike demand.
+
+**Model Deployment**: The selected model was deployed in a live production setting, where it could make real-time predictions of bike demand. The model's performance was monitored over time to ensure its accuracy and usefulness.
